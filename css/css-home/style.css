@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+@keyframes rainbow-text-color{
+    0%{color: rgba(211, 0, 141, 0.550);}
+    15%{color: rgb(255, 0, 0);}
+    45%{color: rgb(255, 255, 0);}
+    60%{color: rgb(0, 255, 0);}
+    75%{color: rgb(255, 0, 255);}
+    90%{color: rgb(0, 0, 255);}
+    100%{color: rgba(211, 0, 141, 0.550)}
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+header{
+    background-color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(211, 0, 141);
+    width: 100%;
+    height: 140px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.a{
+    margin: 0 auto;
+    width: 240px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.subtitulo{
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+.aulas{
+    border-top: 1px solid rgba(211, 0, 141, 0.550);
+    border-bottom: 1px solid rgba(211, 0, 141, 0.550);
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    height: 64px;
+    color: rgba(211, 0, 141, 0.550);
+    letter-spacing: 12px;
+}
+.aulas:hover{
+    animation-name: rainbow-text-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.cardAulas{
+    width: 480px;
+    height: 240px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 0 12px .5px rgba(255, 255, 255, 0.616);
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.cardAulasMaior{
+    width: 480px;
+    height: 260px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 0 12px .5px rgba(255, 255, 255, 0.616);
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.cardAulas:hover{
+    box-shadow: 0 0 12px .7px rgb(211, 0, 141);
+    transition: .5s;
+}
+.cardAulasMaior:hover{
+    box-shadow: 0 0 12px .7px rgb(211, 0, 141);
+    transition: .5s;
+}
+.titleAulas{
+    letter-spacing: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+    color: rgb(211, 0, 141);
+    font-size: 16px;
+}
+.logo{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 220px ;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    border-top: 3px solid rgb(211, 0, 141);
+    width: 100%;
+    height: 140px;
+    text-align: center;
+}
+.logo:hover{
+    color: rgb(211, 0, 141);
+    transition: .7s;
+    text-shadow: 0 0 .5px rgba(211, 0, 141, 0.550);
+}
+video{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.aulaDrop{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+#toggle-1 {
+    display:none;
+}
+#toggle-2 {
+    display:none;  
+} 
+#toggle-3 {
+    display:none;  
+}
+#toggle-4 {
+    display:none;  
+}  
+
+ label{ 
+   cursor: pointer;
+   margin: 0 auto;
+   border-top: 1px solid rgba(211, 0, 141, 0.550);
+   border-bottom: 1px solid rgba(211, 0, 141, 0.550);
+   text-align: center;
+   margin: 0 auto;
+   width: 60%;
+   height: 64px;
+   color: rgba(211, 0, 141, 0.550);
+   letter-spacing: 12px;
+   font-size: 18px;
+ }
+ label:hover{
+    border-top-color: rgb(211, 0, 141);
+    border-bottom-color: rgb(211, 0, 141);
+    color: rgb(211, 0, 141);
+    transition: .6s;
+ }
+ #mostra {
+    display:none;
+ }
+ #toggle-1:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-2:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-3:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-4:checked ~ #mostra {
+    display:block;
+ }
+ 
